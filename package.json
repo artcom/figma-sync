@@ -1,12 +1,26 @@
 {
-  "name": "figma-sync",
+  "name": "@artcom/figma-sync",
   "version": "0.1.0",
   "description": "Track drift between Figma design nodes and their code components: annotate components, hash design + code, and report sync status via snapshot or live REST backends.",
-  "keywords": ["figma", "design-to-code", "design-tokens", "drift", "sync", "code-connect"],
+  "keywords": [
+    "figma",
+    "design-to-code",
+    "design-tokens",
+    "drift",
+    "sync",
+    "code-connect"
+  ],
   "license": "MIT",
+  "author": "ART+COM AG",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artcom/figma-sync.git"
+  },
+  "bugs": "https://github.com/artcom/figma-sync/issues",
+  "homepage": "https://github.com/artcom/figma-sync#readme",
   "type": "module",
   "bin": {
-    "figma-sync": "./cli.js"
+    "figma-sync": "cli.js"
   },
   "main": "./lib/project.js",
   "exports": {
@@ -14,7 +28,16 @@
     "./hash": "./lib/hash.js",
     "./colors": "./lib/colors.js"
   },
-  "files": ["cli.js", "lib", "README.md", "docs"],
+  "files": [
+    "cli.js",
+    "lib",
+    "README.md",
+    "LICENSE",
+    "docs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18"
   }

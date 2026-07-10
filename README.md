@@ -8,15 +8,19 @@ CLI plus a small library API.
 
 ## Install
 
-Consume it as a dependency. As a sibling `file:` package:
+```bash
+npm install --save-dev @artcom/figma-sync
+```
+
+Or, when developing against a sibling checkout:
 
 ```json
-{ "devDependencies": { "figma-sync": "file:../figma-sync" } }
+{ "devDependencies": { "@artcom/figma-sync": "file:../figma-sync" } }
 ```
 
 `npm install` then exposes the `figma-sync` binary (in `node_modules/.bin`, so
 it's callable from your `package.json` scripts) and the library entry
-`import { loadProject } from "figma-sync"`.
+`import { loadProject } from "@artcom/figma-sync"`.
 
 The tool reads/writes a `.figma-sync/` directory in the **current working
 directory** (the consuming project), so run it from that project's root.
@@ -82,7 +86,7 @@ Typically wired into the consuming project's `package.json`:
 Library API (what the CLI wraps):
 
 ```js
-import { loadProject } from "figma-sync"
+import { loadProject } from "@artcom/figma-sync"
 
 const project = await loadProject()
 const status = await project.status()

@@ -33,9 +33,9 @@ const STATE_STYLE = {
 
 const CLEAN_STATES = new Set([STATES.SYNC])
 
-const USAGE = `figma-sync (proof of concept)
+const USAGE = `figma-sync — drift detection between Figma nodes and generated code
 
-Usage: node tools/figma-sync/cli.js <command> [options]
+Usage: figma-sync <command> [options]
 
 Commands:
   scan                 List components with figma-sync annotations
