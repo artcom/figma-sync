@@ -1,0 +1,21 @@
+{
+  "name": "figma-sync",
+  "version": "0.1.0",
+  "description": "Track drift between Figma design nodes and their code components: annotate components, hash design + code, and report sync status via snapshot or live REST backends.",
+  "keywords": ["figma", "design-to-code", "design-tokens", "drift", "sync", "code-connect"],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "figma-sync": "./cli.js"
+  },
+  "main": "./lib/project.js",
+  "exports": {
+    ".": "./lib/project.js",
+    "./hash": "./lib/hash.js",
+    "./colors": "./lib/colors.js"
+  },
+  "files": ["cli.js", "lib", "README.md", "docs"],
+  "engines": {
+    "node": ">=18"
+  }
+}

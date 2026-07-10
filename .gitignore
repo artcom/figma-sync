@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Secrets — cli.js loads FIGMA_TOKEN from .env
+.env
+.env.*
+!.env.example
+
+# Build / tool caches
+.vite/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Package tarballs
+*.tgz
+
+# Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
